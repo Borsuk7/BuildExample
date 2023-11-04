@@ -7,6 +7,7 @@ public class CalculatorTests
     [Theory]
     [InlineData(0, 1, 1)]
     [InlineData(0, -1, -1)]
+    [InlineData(-1, -1, -2)]
     [InlineData(2.5, 2.5, 5)]
     public void Add_Should_BeRight(double a, double b, double expected)
     {
